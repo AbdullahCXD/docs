@@ -13,12 +13,7 @@
       {
           "tab": "Documentation",
           "groups": [
-              {
-                "group": "Project Documentation",
-                "pages": [
-                  "documentation/quickstart"
-                ]
-              },
+
               {
                 "group": "Monterey.js",
                 "pages": [

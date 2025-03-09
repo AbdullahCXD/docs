@@ -25,27 +25,18 @@ To build a Monterey.js project, do the following:
 
 ## Build command options
 
-<API
-  name="Customization"
-  description="Project customization settings."
-  properties={[
-  {
-    name: "theme",
-    type: '"mint" | "maple" | "palm"',
-    required: true,
-    description: "The layout theme of the project. Examples: **Maple**, **Palm**.",
-  },
-  {
-    name: "name",
-    type: "string",
-    required: true,
-    description: "The name of the project, organization, or product. Minimum length: **1**.",
-  },
-  {
-    name: "description",
-    type: "string",
-    required: false,
-    description: "Optional description used for SEO and LLM indexing.",
-  }
-]}
-/>
+<ParamField path="output" type="string" required={false} initialValue="dist">
+  Outputs built `.monjson` files to `.js` files in this directory.
+</ParamField>
+
+<ParamField path="minify" type="boolean" required={false} initialValue="false">
+  Minifies the output so It doesn't take space
+</ParamField>
+
+<ParamField path="sourcemap" type="boolean" required={false} initialValue="false">
+  Generates sourcemaps, currently this feature isn't working.
+</ParamField>
+
+<ParamField path="transpiler" type="default | online" required={false} initialValue="default">
+  Changes the transpiler to a specific or custom transpiler.
+</ParamField>

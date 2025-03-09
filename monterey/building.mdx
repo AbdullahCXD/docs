@@ -1,0 +1,51 @@
+---
+title: "Building"
+description: "Building a Monterey.js"
+---
+
+## Building a project
+
+To build a Monterey.js project, do the following:
+
+<Steps>
+  <Step title="Step 1">
+    Ensure that the project is initialized, initialize with `monterey init`
+  </Step>
+
+  <Step title="Step 2">
+    Use the build command:
+
+    ```bash
+    monterey build
+    ```
+
+    The following command will build the project fully into an output directory
+  </Step>
+</Steps>
+
+## Build command options
+
+<API
+  name="Customization"
+  description="Project customization settings."
+  properties={[
+  {
+    name: "theme",
+    type: '"mint" | "maple" | "palm"',
+    required: true,
+    description: "The layout theme of the project. Examples: **Maple**, **Palm**.",
+  },
+  {
+    name: "name",
+    type: "string",
+    required: true,
+    description: "The name of the project, organization, or product. Minimum length: **1**.",
+  },
+  {
+    name: "description",
+    type: "string",
+    required: false,
+    description: "Optional description used for SEO and LLM indexing.",
+  }
+]}
+/>

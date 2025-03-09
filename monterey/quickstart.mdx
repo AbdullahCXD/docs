@@ -16,6 +16,10 @@ mode: "wide"
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 </div>
 
+<Warning>
+  The language is still **work in progress**, so depending on the state of it right now, it wont be finished. Issues and bugs can be created at the Issues area in [Github](https://github.com/abdullahcxd/monterey.js/issues).
+</Warning>
+
 ## ✨ Why Monterey?
 
 Ever wished JSON could do more? Monterey.js bridges the gap between static configuration and dynamic code. Write your logic in a familiar JSON format and let Monterey transform it into production-ready JavaScript.
@@ -39,7 +43,7 @@ Here's how simple it is to use Monterey:
 
 1️⃣ Create your Monterey file (`hello.monjson`):
 
-```json
+```json example.monjson
 {
     "$schema": "https://raw.githubusercontent.com/AbdullahCXD/monterey.js/refs/heads/develop/schema/monterey.schema.json",
     "header": {
@@ -108,7 +112,7 @@ Options:
 
 ### Core Components
 
-```typescript
+```typescript transpiler.js
 // Create a new instance
 const monterey = new Monterey();
 
@@ -124,7 +128,7 @@ const fromString = monterey.build(jsonString);
 
 Your Monterey files follow this intuitive structure:
 
-```json
+```json example.monjson
 {
     "$schema": "...",
     "header": {

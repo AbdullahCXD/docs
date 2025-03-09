@@ -18,6 +18,12 @@
                 "pages": [
                   "documentation/quickstart"
                 ]
+              },
+              {
+                "group": "Monterey.js",
+                "pages": [
+                  "monterey/quickstart",
+                ]
               }
           ]
       }

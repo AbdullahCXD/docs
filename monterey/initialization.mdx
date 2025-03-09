@@ -3,6 +3,8 @@ title: "Initialization"
 description: "This document will tell you how to initialize a project."
 ---
 
+import { FileTree } from 'mintlify/components';
+
 ## Initialization
 
 <Steps>
@@ -15,13 +17,15 @@ description: "This document will tell you how to initialize a project."
   </Step>
 
   <Step title="Finished result">
-    The finished result of the process should be like this:
+    <FileTree>
+      <FileTree.Folder name="project" defaultOpen>
+        <FileTree.File name="file.js" />
 
-    ```
-    📂 <root>/
-      ├── 📄 main.monjson
-      └── 📄 config.monterey.json
-    ```
+        <FileTree.Folder name="subfolder">
+          <FileTree.File name="subfile.js" />
+        </FileTree.Folder>
+      </FileTree.Folder>
+    </FileTree>
   </Step>
 </Steps>
 

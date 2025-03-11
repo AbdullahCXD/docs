@@ -11,10 +11,10 @@
   "navigation": {
     "tabs": [
       {
-          "tab": "Documentation",
+          "tab": "Monterey.js",
           "groups": [
               {
-                "group": "Monterey.js",
+                "group": "Information",
                 "pages": [
                   "monterey/quickstart",
                   "monterey/installation",
@@ -23,7 +23,7 @@
                 ]
               },
               {
-                "group": "Monterey.js Syntax",
+                "group": "Syntax",
                 "pages": [
                   "monterey/syntax/quickstart"
                 ]

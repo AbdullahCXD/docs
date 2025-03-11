@@ -1,0 +1,78 @@
+---
+title: "Hello World Example"
+description: "An example of a created Hello World program in Monterey JSON"
+---
+
+## Example Details
+
+This example will just print hello world to the output, it's a simple application that only has one method and one JavaScript Caller
+
+```json main.monjson
+{
+  "$schema": "https://raw.githubusercontent.com/AbdullahCXD/monterey.js/refs/heads/develop/schema/monterey.schema.json",
+  "header": {
+    "montereyVersion": "v1.0.2",
+    "environment": [],
+    "settings": {
+      "loadDotenv": true
+     }
+  },
+  "javascript": {
+      "top": "",
+      "end": "testMethod()",
+      "async": false
+  },
+  "variables": [],
+  "functions": [
+    {
+      "name": "testMethod",
+      "parameters": [],
+      "body": {
+        "raw": "console.log(\"Hello, World!\");"
+      }
+    }
+  ],
+  "classes": []
+}
+```
+
+Building this file will result the code below generated/transpiled:
+
+```javascript main.js
+(() => {
+  
+})()
+
+/* Generated Variables */
+
+
+/* Generated Classes */
+
+
+/* Generated Functions */
+function testMethod() {
+    console.log("Hello, World!");
+    return undefined;
+}
+
+
+(() => {
+  testMethod()
+})()
+```
+
+Running this file either using node or our run command that builds and automatically runs node using: `monterey run` will result in `Hello, World!` being logged to the standard output:
+
+```bash
+$ > monterey build
+
+✔ Validating project
+✔ Preparing build directory
+✔ Finding Monterey files
+✔ Building files
+  ✔ Building main.monjson
+✔ Build complete! Processed 1 files
+
+$ > node dist/main.js
+Hello, World!
+```

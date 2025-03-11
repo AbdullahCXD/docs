@@ -1,0 +1,36 @@
+---
+title: "Root"
+description: "The root fields of the script"
+---
+
+## Root Configuration
+
+<ParamField path="$schema" type="url" required={true} initialValue="https://raw.githubusercontent.com/AbdullahCXD/monterey.js/refs/heads/develop/schema/monterey.schema.json">
+  For intellisense, specifies a JSON schema for types.
+</ParamField>
+
+<ParamField path="header" type="object" required={true}>
+  Monterey CLI Headers, more information at [this](/monterey/configuration/monterey-header)
+</ParamField>
+
+<ParamField path="javascript" type="object" required={false}>
+  JavaScript Direct implementation code, more information at [this](/monterey/configuration/javascript)
+</ParamField>
+
+<Accordion title="Settings Object" defaultOpen={false}>
+    <ParamField path="loadDotenv" type="boolean" required={false} initialValue="false">
+      Loads the environment keys from the `.env` file.
+    </ParamField>
+  </Accordion>
+
+<ParamField path="variables" type="object" required={false}>
+  Script Variables, more information at [this](/monterey/configuration/variables) or [this guide](/monterey/guides/variables)
+</ParamField>
+
+<ParamField path="functions" type="object" required={false}>
+  Script Functions, more information at [this](/monterey/configuration/functions) or [this guide](/monterey/guides/functions)
+</ParamField>
+
+<ParamField path="classes" type="object" required={false}>
+  Script Classes, more information at [this](/monterey/configuration/classes) or [this guide](/monterey/guides/classes)
+</ParamField>

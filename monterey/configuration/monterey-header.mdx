@@ -1,0 +1,27 @@
+---
+title: "Monterey Header"
+description: "Manage the current Monterey file context by editing the headers."
+sidebarTitle: "Header"
+---
+
+## Monterey Headers
+
+<ParamField path="montereyVersion" type="v1.0.2" required={true} initialValue="v1.0.2">
+  Tells the Monterey CLI that this project uses the specified Monterey version
+</ParamField>
+
+<ParamField path="environment" type="string array" required={false} initialValue="[]">
+  Environment key-values that can be set directly inside the code, defaulted to an empty array.
+</ParamField>
+
+<ParamField path="settings" type="object" required={true}>
+  Manages the settings of the current context.
+
+
+
+  <Accordion title="Settings Object" defaultOpen={false}>
+    <ParamField path="loadDotenv" type="boolean" required={false} initialValue="false">
+      Loads the environment keys from the `.env` file.
+    </ParamField>
+  </Accordion>
+</ParamField>

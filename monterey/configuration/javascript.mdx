@@ -1,0 +1,34 @@
+---
+title: 'Raw JavaScript Implementation'
+description: 'Implement Raw JavaScript code directly into your script'
+---
+
+## Raw JavaScript Implementation
+
+<ParamField path="top" type="string" required={false}>
+  Places to the top, raw implemented JS code that is executed.
+</ParamField>
+
+<ParamField path="end" type="string" required={false}>
+  Places to the end, raw implemented JS code that is executed.
+</ParamField>
+
+<ParamField path="async" type="booelan" required={false}>
+  Changes between asynchronous and synchronized execution.
+
+
+
+  ```javascript
+  /* Top Level Implemented code with async */
+  (async () => {
+    <top_field>
+  });
+
+  /* Top Level Implemented code with sync */
+  (() => {
+    <top_field>
+  });
+  ```
+
+  This goes for end as well, this field connects to the both fields: `top`,`end`
+</ParamField>

@@ -13,21 +13,35 @@
       {
           "tab": "Monterey.js",
           "groups": [
-              {
-                "group": "Information",
-                "pages": [
-                  "monterey/quickstart",
-                  "monterey/installation",
-                  "monterey/initialization",
-                  "monterey/building"
-                ]
-              },
-              {
-                "group": "Syntax",
-                "pages": [
-                  "monterey/syntax/quickstart"
-                ]
-              }
+            {
+              "group": "Information",
+              "pages": [
+                "monterey/quickstart",
+                "monterey/installation",
+                "monterey/initialization",
+                "monterey/building"
+              ]
+            },
+            {
+              "group": "Syntax",
+              "pages": [
+                "monterey/syntax/quickstart"
+              ]
+            },
+            {
+              "group": "Configuration",
+              "pages": [
+                "monterey/configuration/javascript",
+                "monterey/configuration/monterey-header",
+                "monterey/configuration/root"
+              ]
+            },
+            {
+              "group": "Examples",
+              "pages": [
+                "monterey/examples/helloworld"
+              ]
+            }
           ]
       }
     ],

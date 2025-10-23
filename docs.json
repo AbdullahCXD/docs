@@ -11,6 +11,15 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "Termlet.js",
+        "groups": [
+          {
+            "group": "Informational",
+            "pages": ""
+          }
+        ]
+      },
+      {
           "tab": "Monterey.js",
           "groups": [
             {

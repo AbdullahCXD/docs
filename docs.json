@@ -15,7 +15,9 @@
         "groups": [
           {
             "group": "Informational",
-            "pages": ""
+            "pages": [
+              "termlet/quickstart"
+            ]
           }
         ]
       },
